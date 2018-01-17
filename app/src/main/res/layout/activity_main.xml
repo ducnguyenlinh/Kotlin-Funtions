@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.kotlinfuntions.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <EditText
+            android:id="@+id/edtNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number 1"/>
+
+        <EditText
+            android:id="@+id/edtNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number 2"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <Button
+                android:id="@+id/btnSummation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="+"/>
+
+            <Button
+                android:id="@+id/btnSubtraction"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="-"/>
+
+            <Button
+                android:id="@+id/btnMultiplication"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="*"/>
+
+            <Button
+                android:id="@+id/btnDivision"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="/"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
